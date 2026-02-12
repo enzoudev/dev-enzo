@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'TT Fors Black'; /* Nome que você escolheu */
+  src: url('../assets/TT Fors Trial Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.titleH {
+
+    font-family: "TT Fors Black", serif;
+    color: white;
+    font-size: 40px;
+  margin-right: 200px;
+
+}

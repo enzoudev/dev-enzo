@@ -1,0 +1,22 @@
+/* Isso aqui elimina qualquer margem ou padding de fábrica */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% ;
+  height: 100%;
+}
+
+#root {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: none !important; /* Força o Vite a soltar o limite de 1280px */
+  display: block !important;  
+}
+
+/* Se você tiver uma div .App, ela também precisa ser liberada */
+.App {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

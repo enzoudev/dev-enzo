@@ -1,0 +1,85 @@
+/* Lista de botões */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+
+  width: 100%;          /* Ocupa toda a largura disponível */
+  min-height: 120px;     /* Altura do seu header */
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;      /* Espaço nas pontas para o conteúdo não bater na tela */
+  box-sizing: border-box; /* Garante que o padding não aumente o 100% */
+
+
+}
+
+.liNAV {
+  color: #808082;
+  font-size: 15px;
+  font-family: "Noto sans";
+  cursor: pointer;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+
+.liNAV::after{
+  content:'';
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F4413D;
+  transition: width 0.3s;
+
+}
+
+
+.liNAV:hover {
+  color: #F4413D;
+  transition: 0.5s;
+}
+
+.liNAV:hover::after {
+  width: 100%;
+
+}
+
+.active::after{
+  content:'';
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F4413D;
+  transition: width 0.3s;
+  width: 100% ;
+}
+
+.active {
+    color: #F4413D;
+}
+
+.active:hover {
+  color: #F4413D;
+  transition: 0.5s;
+}
+
+.active:hover::after {
+  width: 100%;
+
+}
+
+
+
+
+
